@@ -1,6 +1,6 @@
 import express from 'express'
 import { protect } from '../middleware/authMiddleware.js'
-import { createBook, getBook, getAllBooks, updateBook, deleteBook, booksByCategory } from '../controllers/books.js'
+import { createBook, getBook, getAllBooks, updateBook, deleteBook, booksByCategory, likePost } from '../controllers/books.js'
 
 const router = express.Router()
 

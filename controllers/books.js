@@ -70,9 +70,13 @@ export const updateBook = async(req, res) => {
 // DELETE A BOOK
 export const deleteBook = async(req, res) => {
 	try {
-		const deleteBook = await Book.findByIdAndDelete(req.params.id)
+		await Book.findByIdAndDelete(req.params.id)
 		return res.status(200).json({ status: 'success', msg: "Book deleted successfully" })
 	} catch(error) {
 		return res.status(401).json(error)
 	}
+}
+
+export const likePost = async(req, res) => {
+	
 }

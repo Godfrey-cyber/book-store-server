@@ -36,11 +36,11 @@ export const verifyAdmin = async(req, res, next) => {
 		}
 		const admin = await User.find(isTokenVerified.isAdmin).select('-password')
 		if (!admin) {
-			return res.status(401).json({msg: 'Admin not found.'})
+			return res.status(401).json({msg: 'You are not an Admin.'})
 		}
 		req.admin = admin
 		next()
 	} catch (error) {
-		return res.status(401).json({msg: 'User not Authorized, please login.'})
+		return res.status(401).json( {msg: 'User not Authorized, you are not an admin.'} )
 	}
 }

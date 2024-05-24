@@ -20,5 +20,4 @@ const TokenSchema = new mongoose.Schema({
 	}
 }, { timestamps: true }, { autoIndex: false })
 
-
 export default mongoose.model('Token', TokenSchema);
