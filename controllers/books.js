@@ -36,6 +36,7 @@ export const getBook = async(req, res)=> {
 // GET ALL BOOKS
 export const getAllBooks = async (req, res) => {
 	// Book.createIndexes({ title: 'text', desc: 'text'});
+	// productSchema.index({ category: 1, price: 1 });
 	const searchTerm = req.query.search
 	console.log(searchTerm)
 	try {
