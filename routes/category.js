@@ -11,6 +11,3 @@ router.put("/update-category/:id", protect, updateCategory) // update category
 router.delete("/delete-category/:id", protect, deleteCategory) // delete category
 
 export default router
-
-// :~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
-// 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
