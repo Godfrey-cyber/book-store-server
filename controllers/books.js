@@ -35,7 +35,7 @@ export const getBook = async(req, res)=> {
 
 // GET ALL BOOKS
 export const getAllBooks = async (req, res) => {
-	Book.createIndexes({ title: 'text', content: 'text', tags: 'text' });
+	Book.createIndexes({ title: 'text', desc: 'text'});
 	const searchTerm = req.query.search
 	console.log(searchTerm)
 	try {
